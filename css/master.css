@@ -1,0 +1,123 @@
+/* start variables */
+:root {
+  --main-color: #a30101;
+  --section-padding: 60px;
+}
+/* end variables */
+/* start global rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Lora',serif;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+hr {
+  width: 74%;
+  margin: 20px auto;
+  border: 1px solid var(--main-color);
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* small screen */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+  .special-heading + p {
+    font-size: 15px;
+    margin: 10px;
+  }
+  .special-heading {
+    font-size: 60px;
+  }
+}
+/* medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* end global rules  */
+/* start header */
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  padding-top: 5px;
+}
+.header .container .logo {
+  height: 100%;
+}
+.header .container .logo img {
+  height: 100%;
+}
+.header .links ul {
+  display: flex;
+}
+.header .links ul li {
+  margin-left: 30px;
+  text-transform: uppercase;
+}
+.header .links ul li:last-child {
+  margin-right: 10px;
+}
+.header .links ul li a {
+  color: black;
+  font-size: 18px;
+}
+.header .links ul li:hover {
+  transition: 0.5s;
+  transform: scale(1.2);
+  
+}
+.header .links ul li:hover a {
+  color: var(--main-color);
+}
+/* end header */
+/* start home */
+.home {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.home .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.home .container .img img {
+  width: 600px;
+}
+.home .container .text {
+  width: 50%;
+}
+.home .container .text h1 {
+  margin: 5px;
+}
+.home .container .text p {
+  line-height: 2;
+  font-size: 18px;
+}
+/* end home */
