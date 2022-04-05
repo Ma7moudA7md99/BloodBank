@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- normalize css file -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- main css file -->
+    <link rel="stylesheet" href="css/login.css" />
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <h1>Sign Up</h1>
+        <div class="name">
+          <input
+            type="text"
+            name="fName"
+            class="fName"
+            placeholder="First Name"
+            required
+          />
+          <input
+            type="text"
+            name="lName"
+            class="lName"
+            placeholder="Last Name"
+            required
+          />
+        </div>
+        <input
+          type="email"
+          name="email"
+          class="email"
+          placeholder="E-Mail"
+          required
+        />
+        <input
+          type="password"
+          name="password"
+          class="password"
+          placeholder="Password"
+          required
+        />
+        <input
+          type="password"
+          name="password"
+          class="password"
+          placeholder="Confirm Password"
+          required
+        />
+        <select name="Gender" id="Gender" required>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+        <select name="need" id="need" required>
+          <option value="Donor">Donor</option>
+          <option value="Need">Need</option>
+        </select>
+        <input type="checkbox" name="privacy" id="privacy" required />
+        <label for="privacy">I have read and agree to the Privacy Policy</label>
+        <button>Sign In</button>
+      </form>
+    </div>
+  </body>
+</html>

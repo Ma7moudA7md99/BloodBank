@@ -1,0 +1,139 @@
+/* start variables */
+:root {
+  --main-color: #a30101;
+  --main-border-radius: 20px;
+}
+
+/* end variables */
+/* start global rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Lora', serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+hr {
+  margin: 20px auto;
+  border: 1px solid var(--main-color);
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* small screen */
+@media (min-width: 768px) {
+
+  .container,
+  hr {
+    width: 750px;
+  }
+
+  .special-head+p {
+    font-size: 15px;
+    margin: 10px;
+  }
+
+  .special-head {
+    font-size: 60px;
+  }
+}
+
+/* medium */
+@media (min-width: 992px) {
+
+  .container,
+  hr {
+    width: 970px;
+  }
+}
+
+/* large */
+@media (min-width: 1200px) {
+
+  .container,
+  hr {
+    width: 1170px;
+  }
+}
+/* end global rules  */
+/* start form */
+.container form {
+  width: 500px;
+  height: 550px;
+  margin: 7% auto;
+  background-color: #a301011c;
+  border: 1px solid var(--main-color);
+  border-radius: var(--main-border-radius);
+}
+.container form h1 {
+  font-size: 40px;
+  margin: 50px 0 50px 32%;
+  text-transform: uppercase;
+}
+.container form input {
+  border-radius: var(--main-border-radius);
+  border: 1px solid var(--main-color);
+  font-size: 18px;
+  margin: 10px 0;
+  margin-left: 9%;
+  padding: 5px 15px;
+  width: 80%;
+}
+.container form button {
+  display: block;
+  border: 1px solid var(--main-color);
+  width: 35%;
+  border-radius: var(--main-border-radius);
+  font-size: 18px;
+  padding: 5px 15px;
+  margin: 20px 0 20px 32%;
+}
+.container form input:focus {
+  outline: solid #a301011c;
+  border: none;
+}
+.container form input[class="fName"] {
+  width: 37%;
+}
+.container form input[class="lName"] {
+  width: 37%;
+  margin-left: 5%;
+}
+.container form input[type=checkbox] {
+  width: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.container form select {
+  margin: 10px 0;
+  margin-left: 9%;
+  width: 37%;
+  border: 1px solid var(--main-color);
+  border-radius: var(--main-border-radius);
+}
+.container form select:last-of-type {
+  margin-left: 5%;
+}
+/* end form */
