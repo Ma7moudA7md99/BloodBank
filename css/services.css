@@ -67,24 +67,6 @@ hr {
   }
 }
 /* end global rules  */
-/* start special-head */
-.special-head {
-  text-align: center;
-}
-.special-head h1 {
-  font-size: 40px;
-  text-transform: uppercase;
-  letter-spacing: 15px;
-  color: #a301015e;
-  margin: 0;
-}
-.special-head p {
-  font-size: 18px;
-  letter-spacing: 2px;
-  opacity: 50%;
-  margin-top: -5px;
-}
-/* end special-head */
 /* start header */
 .header .container {
   display: flex;
@@ -100,6 +82,8 @@ hr {
 }
 .header .links ul {
   display: flex;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 .header .links ul li {
   margin-left: 30px;
@@ -137,145 +121,93 @@ hr {
 /* start home */
 .home {
   padding-top: var(--section-padding);
-  padding-bottom: 50px;
 }
-.home .container {
+.home .content {
   display: flex;
-  justify-content: space-between;
   gap: 30px;
 }
-.home .container .img {
-  width: 49%;
-}
-.home .container .img img {
-  width: 100%;
-}
-.home .container .text {
-  width: 50%;
-}
-.home .container .text h1 {
-  margin: 5px;
-}
-.home .container .text p {
-  line-height: 2;
-  font-size: 20px;
-}
-.home .container .text p a {
-  color: black;
-  text-decoration: underline;
-}
-@media (max-width: 1199px) {
-  .home .container .img {
-    width: 40%;
-  }
-  /* .home .container .img img {
-    width: 70%;
-  } */
-  .home .container .text {
-    width: 90%;
-  }
-  .home .container .text h1 {
-    margin: 0;
-  }
-  .home .container .text p {
-    line-height: 1.7;
-  }
-}
-@media (max-width: 992px) {
-  .home .container .img {
-    display: none;
-  }
-  .home .container .text {
-    width: 100%;
-    text-align: center;
-    margin: 0 auto;
-  }
-}
-/* end home */
-/* start about */
-.about {
-  padding-top: var(--section-padding);
-  padding-bottom: var(--section-padding);
-}
-.about .content {
-  margin-top: 50px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  grid-gap: 10px;
-}
-.about .container .img {
+.home .content .image {
   width: 500px;
 }
-.about .container .img img {
+.home .content .image img {
   width: 100%;
+  height: 100%;
 }
-.about .content .text p {
-  line-height: 1.5;
-}
-@media (max-width: 767px) {
-  .about .container .img {
-    display: none;
-  }
-  .about .content {
-    display: block;
-  }
-  .about .content .text {
-    width: 100%;
-    text-align: center;
-    margin: 0 auto;
-  }
-  .about .content .text p {
-    line-height: 2;
-  }
-}
-/* end about */
-/* start services */
-.services {
-  padding-top: var(--section-padding);
-  padding-bottom: var(--section-padding);
-}
-.services .content {
-  display: flex;
-  gap: 50px;
-}
-.services .content .text h1 {
-  text-transform: uppercase;
+.home .content .text h1 {
   font-size: 40px;
   color: var(--main-color);
 }
-.services .content .text p {
+.home .content .text p {
   line-height: 2;
-  font-size: 22px;
+  font-size: 18px;
 }
-.services .content .text button {
-  padding: 10px;
+.home .content .text button {
   background-color: var(--main-color);
-  /* border: 1px solid var(--main-color); */
-  border-radius: 10px;
+  height: 40px;
 }
-.services .content .text button a {
+.home .content .text button a {
   color: white;
 }
-.services .content .img {
-  width: 500px;
-}
-.services .content .img img {
-  width: 100%;
-}
 @media (max-width: 767px) {
-  .services .content {
+  .home .content {
     flex-direction: column;
+  }
+  .home .content .image {
+    width: 350px;
+  }
+  .home .content .text {
     text-align: center;
   }
-  .services .content .img {
-    width: 300px;
-    margin: 25px auto 0;
+}
+/* end home */
+/* start showinfo */
+.showinfo {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.showinfo .show {
+  display: flex;
+  gap: 30px;
+  padding-bottom: var(--section-padding);
+}
+.showinfo .show img {
+  width: 500px;
+}
+.showinfo .show span h1 {
+  font-size: 40px;
+  color: var(--main-color);
+}
+.showinfo .show span p {
+  font-size: 18px;
+  line-height: 2;
+}
+.showinfo .show span button {
+  width: 100px;
+  height: 40px;
+  font-size: 18px;
+  background-color: var(--main-color);
+}
+.showinfo .show span button a {
+  color: white;
+}
+.showinfo .show video {
+  width: 500px;
+}
+@media (max-width: 767px) {
+  .showinfo .show {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
   }
-  .services .content .text p {
-    font-size: 20px;
+  .showinfo .show:last-child {
+    padding-bottom: 0;
+  }
+  .showinfo .show img,
+  .showinfo .show video {
+    width: 300px;
   }
 }
-/* end services */
+/* end showinfo */
 /* start footer */
 .footer {
   height: 50px;
