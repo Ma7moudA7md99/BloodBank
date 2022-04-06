@@ -134,7 +134,7 @@ hr {
 /* start home */
 .home {
   padding-top: var(--section-padding);
-  padding-bottom: var(--section-padding);
+  padding-bottom: 50px;
 }
 .home .container {
   display: flex;
@@ -156,25 +156,6 @@ hr {
 .home .container .text p {
   line-height: 2;
   font-size: 18px;
-}
-.home ul {
-  position: absolute;
-  left: 50%;
-  border: 0;
-  display: flex;
-  transform: translateX(-50%)
-}
-.home ul li {
-  width: 15px;
-  height: 15px;
-  border: 1px solid black;
-  border-radius: 50%;
-  margin-left: 10px;
-  margin-top: 15px;
-}
-.home ul li.active {
-  background-color: var(--main-color);
-  border-color: var(--main-color);
 }
 @media (max-width: 1199px) {
   .home .container .img {
@@ -209,8 +190,18 @@ hr {
   padding-bottom: var(--section-padding);
 }
 .about .content {
-  display: flex;
-  gap: 30px;
-  margin-top: 70px;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 10px;
+}
+.about .container .img {
+  width: 500px;
+}
+.about .container .img img {
+  width: 100%;
+}
+.about .content .text p {
+  line-height: 1.5;
 }
 /* end about */
